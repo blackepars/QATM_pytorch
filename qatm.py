@@ -32,7 +32,7 @@ if __name__ == '__main__':
     parser.add_argument('--cuda', action='store_true')
     parser.add_argument('-s', '--sample_image', default='sample/sample1.jpg')
     parser.add_argument('-t', '--template_images_dir', default='template/')
-    parser.add_argument('--alpha', type=float, default=25)
+    parser.add_argument('--alpha', type=float, default=10)
     parser.add_argument('--thresh_csv', type=str, default='thresh_template.csv')
     args = parser.parse_args()
     

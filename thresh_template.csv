@@ -1,6 +1,8 @@
 ,path,thresh
-0,template/template1_dummy.png,0.7
-1,template/template1_2.png,0.7
-2,template/template1_3.png,0.7
-3,template/template1_4.png,0.7
-4,template/template1_1.png,0.7
+0,template/template1.jpg,0.5
+1,template/template2.jpg,0.5
+2,template/template3.jpg,0.5
+3,template/template4.jpg,0.5
+4,template/template5.jpg,0.5
+5,template/template6.jpg,0.5
+6,template/template7.jpg,0.5

@@ -1,17 +1,3 @@
-# ---
-# jupyter:
-#   jupytext:
-#     formats: ipynb,py
-#     text_representation:
-#       extension: .py
-#       format_name: light
-#       format_version: '1.3'
-#       jupytext_version: 1.0.5
-#   kernelspec:
-#     display_name: Python 3
-#     language: python
-#     name: python3
-# ---
 
 import numpy as np
 import cv2
@@ -61,7 +47,7 @@ class ImageDataset(torch.utils.data.Dataset):
         template = cv2.imread(template_path)
         if self.transform:
             template = self.transform(template)
-        thresh = 0.7
+        thresh = 0.5
         if self.thresh_df is not None:
             if self.thresh_df.path.isin([template_path]).sum() > 0:
                 thresh = float(self.thresh_df[self.thresh_df.path==template_path].thresh)
